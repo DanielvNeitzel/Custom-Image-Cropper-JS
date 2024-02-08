@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Image Cropper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="custom-wrapper">
+    <input type="file" id="custom-file" accept="image/*" />
+    <label for="custom-file">Escolha sua Foto</label>
+    <div class="custom-container">
+      <div class="custom-image-container">
+        <img id="custom-image" />
+      </div>
+    </div>
+    <div class="custom-options custom-hide">
+      <input type="number" id="custom-height-input" placeholder="Altura" max="780" />
+      <input type="number" id="custom-width-input" placeholder="Largura" max="780" />
+      <button class="custom-aspect-ratio-button">16:9</button>
+      <button class="custom-aspect-ratio-button">4:3</button>
+      <button class="custom-aspect-ratio-button">1:1</button>
+      <button class="custom-aspect-ratio-button">2:3</button>
+      <button class="custom-aspect-ratio-button">Seleção Livre</button>
+    </div>
+    <div class="custom-container">
+      <div class="custom-preview-container">
+        <img id="custom-preview-image" />
+      </div>
+    </div>
+    <div class="custom-btns">
+      <button id="custom-preview" class="custom-hide">Visualizar</button>
+      <a href="" id="custom-download" class="custom-hide">Baixar</a>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

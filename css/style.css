@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.custom-wrapper {
+  width: min(100%, 1024px);
+  position: absolute;
+  transform: translateX(-50%);
+  top: 1em;
+  left: 50%;
+  background-color: #ffffff;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+}
+
+.custom-container {
+  display: flex;
+  border-radius: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.custom-container .custom-image-container,
+.custom-container .custom-preview-container {
+  max-width: 100%;
+  width: 600px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  background-color: #025bee;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  width: 250px;
+  padding: 16px 0;
+  border-radius: 0.3em;
+  margin: 16px auto;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 600px;
+}
+
+.custom-image-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.custom-options {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 16px 5px;
+  border-radius: 0.3em;
+  border: 2px solid #000000;
+}
+
+button {
+  padding: 1em;
+  border-radius: 0.3em;
+  border: 2px solid #025bee;
+  background-color: #ffffff;
+  color: #025bee;
+  cursor:pointer;
+}
+
+.custom-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.custom-btns button {
+  font-size: 1em;
+}
+
+.custom-btns a {
+  border: 2px solid #025bee;
+  background-color: #025bee;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+}
+
+.custom-hide {
+  display: none;
+}
